@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SubmissionFilterDomainsMode | plagiarism-checker</title>
+	<title>MaskingPolicy | plagiarism-checker</title>
 	<meta name="description" content="Documentation for plagiarism-checker">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">plagiarism-checker</a>
 				</li>
 				<li>
-					<a href="../modules/models_submissions_properties_domainsmode.html">models/submissions/properties/DomainsMode</a>
+					<a href="../modules/models_submissions_properties_policies.html">models/submissions/properties/Policies</a>
 				</li>
 				<li>
-					<a href="models_submissions_properties_domainsmode.submissionfilterdomainsmode.html">SubmissionFilterDomainsMode</a>
+					<a href="models_submissions_properties_policies.maskingpolicy.html">MaskingPolicy</a>
 				</li>
 			</ul>
-			<h1>Enumeration SubmissionFilterDomainsMode</h1>
+			<h1>Enumeration MaskingPolicy</h1>
 		</div>
 	</div>
 </header>
@@ -75,8 +75,9 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="models_submissions_properties_domainsmode.submissionfilterdomainsmode.html#exclude" class="tsd-kind-icon">Exclude</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="models_submissions_properties_domainsmode.submissionfilterdomainsmode.html#include" class="tsd-kind-icon">Include</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="models_submissions_properties_policies.maskingpolicy.html#maskall" class="tsd-kind-icon">Mask<wbr>All</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="models_submissions_properties_policies.maskingpolicy.html#maskunlessowner" class="tsd-kind-icon">Mask<wbr>Unless<wbr>Owner</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="models_submissions_properties_policies.maskingpolicy.html#nomasking" class="tsd-kind-icon">No<wbr>Masking</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,32 +86,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="exclude" class="tsd-anchor"></a>
-					<h3>Exclude</h3>
-					<div class="tsd-signature tsd-kind-icon">Exclude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+					<a name="maskall" class="tsd-anchor"></a>
+					<h3>Mask<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">Mask<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/DomainsMode.ts#L33">src/models/submissions/properties/DomainsMode.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/Policies.ts#L37">src/models/submissions/properties/Policies.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>When Exclude is selected, Copyleaks will only find results outside of the properties.filters.domains list.</p>
+							<p>Mask all results from this document.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="include" class="tsd-anchor"></a>
-					<h3>Include</h3>
-					<div class="tsd-signature tsd-kind-icon">Include<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
+					<a name="maskunlessowner" class="tsd-anchor"></a>
+					<h3>Mask<wbr>Unless<wbr>Owner</h3>
+					<div class="tsd-signature tsd-kind-icon">Mask<wbr>Unless<wbr>Owner<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/DomainsMode.ts#L29">src/models/submissions/properties/DomainsMode.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/Policies.ts#L33">src/models/submissions/properties/Policies.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>When Include is selected, Copyleaks will filter out all results that are not part of the properties.filters.domains list.</p>
+							<p>Mask all results coming from this document, unless the requesting user owns this file.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="nomasking" class="tsd-anchor"></a>
+					<h3>No<wbr>Masking</h3>
+					<div class="tsd-signature tsd-kind-icon">No<wbr>Masking<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/Policies.ts#L29">src/models/submissions/properties/Policies.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>don&#39;t mask results from this document.</p>
 						</div>
 					</div>
 				</section>
@@ -123,7 +139,7 @@
 						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/models_submissions_properties_domainsmode.html">models/submissions/properties/<wbr>Domains<wbr>Mode</a>
+						<a href="../modules/models_submissions_properties_policies.html">models/submissions/properties/<wbr>Policies</a>
 					</li>
 				</ul>
 			</nav>
@@ -132,13 +148,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum tsd-parent-kind-module">
-						<a href="models_submissions_properties_domainsmode.submissionfilterdomainsmode.html" class="tsd-kind-icon">Submission<wbr>Filter<wbr>Domains<wbr>Mode</a>
+						<a href="models_submissions_properties_policies.maskingpolicy.html" class="tsd-kind-icon">Masking<wbr>Policy</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="models_submissions_properties_domainsmode.submissionfilterdomainsmode.html#exclude" class="tsd-kind-icon">Exclude</a>
+								<a href="models_submissions_properties_policies.maskingpolicy.html#maskall" class="tsd-kind-icon">Mask<wbr>All</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="models_submissions_properties_domainsmode.submissionfilterdomainsmode.html#include" class="tsd-kind-icon">Include</a>
+								<a href="models_submissions_properties_policies.maskingpolicy.html#maskunlessowner" class="tsd-kind-icon">Mask<wbr>Unless<wbr>Owner</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="models_submissions_properties_policies.maskingpolicy.html#nomasking" class="tsd-kind-icon">No<wbr>Masking</a>
 							</li>
 						</ul>
 					</li>

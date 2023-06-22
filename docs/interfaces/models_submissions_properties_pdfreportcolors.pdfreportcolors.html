@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SubmissionPDF | plagiarism-checker</title>
+	<title>PdfReportColors | plagiarism-checker</title>
 	<meta name="description" content="Documentation for plagiarism-checker">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">plagiarism-checker</a>
 				</li>
 				<li>
-					<a href="../modules/models_submissions_properties_pdfproperties.html">models/submissions/properties/PdfProperties</a>
+					<a href="../modules/models_submissions_properties_pdfreportcolors.html">models/submissions/properties/PdfReportColors</a>
 				</li>
 				<li>
-					<a href="models_submissions_properties_pdfproperties.submissionpdf.html">SubmissionPDF</a>
+					<a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html">PdfReportColors</a>
 				</li>
 			</ul>
-			<h1>Interface SubmissionPDF</h1>
+			<h1>Interface PdfReportColors</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SubmissionPDF</span>
+						<span class="target">PdfReportColors</span>
 					</li>
 				</ul>
 			</section>
@@ -83,12 +83,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfproperties.submissionpdf.html#colors" class="tsd-kind-icon">colors</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfproperties.submissionpdf.html#create" class="tsd-kind-icon">create</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfproperties.submissionpdf.html#largelogo" class="tsd-kind-icon">large<wbr>Logo</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfproperties.submissionpdf.html#rtl" class="tsd-kind-icon">rtl</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfproperties.submissionpdf.html#title" class="tsd-kind-icon">title</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfproperties.submissionpdf.html#version" class="tsd-kind-icon">version</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html#identical" class="tsd-kind-icon">identical</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html#mainstrip" class="tsd-kind-icon">main<wbr>Strip</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html#minorchanges" class="tsd-kind-icon">minor<wbr>Changes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html#relatedmeaning" class="tsd-kind-icon">related<wbr>Meaning</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html#title" class="tsd-kind-icon">title</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,94 +96,77 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="colors" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> colors</h3>
-					<div class="tsd-signature tsd-kind-icon">colors<span class="tsd-signature-symbol">:</span> <a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html" class="tsd-signature-type" data-tsd-kind="Interface">PdfReportColors</a></div>
+					<a name="identical" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> identical</h3>
+					<div class="tsd-signature tsd-kind-icon">identical<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfProperties.ts#L55">src/models/submissions/properties/PdfProperties.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfReportColors.ts#L37">src/models/submissions/properties/PdfReportColors.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Customizable colors</p>
+							<p>The highlight color for identical matches</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="create" class="tsd-anchor"></a>
-					<h3>create</h3>
-					<div class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="mainstrip" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> main<wbr>Strip</h3>
+					<div class="tsd-signature tsd-kind-icon">main<wbr>Strip<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfProperties.ts#L33">src/models/submissions/properties/PdfProperties.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfReportColors.ts#L29">src/models/submissions/properties/PdfReportColors.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Add a request to generate a customizable export of the scan report, in a pdf format.
-							Set to true in order to generate a pdf report for this scan.</p>
+							<p>The color of the main strip in the header</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="largelogo" class="tsd-anchor"></a>
-					<h3>large<wbr>Logo</h3>
-					<div class="tsd-signature tsd-kind-icon">large<wbr>Logo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="minorchanges" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> minor<wbr>Changes</h3>
+					<div class="tsd-signature tsd-kind-icon">minor<wbr>Changes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfProperties.ts#L41">src/models/submissions/properties/PdfProperties.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfReportColors.ts#L41">src/models/submissions/properties/PdfReportColors.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Customize the logo image in the PDF report.</p>
+							<p>The highlight color for minor changes matches</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rtl" class="tsd-anchor"></a>
-					<h3>rtl</h3>
-					<div class="tsd-signature tsd-kind-icon">rtl<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="relatedmeaning" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> related<wbr>Meaning</h3>
+					<div class="tsd-signature tsd-kind-icon">related<wbr>Meaning<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfProperties.ts#L45">src/models/submissions/properties/PdfProperties.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfReportColors.ts#L45">src/models/submissions/properties/PdfReportColors.ts:45</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>When set to true the text in the report will be aligned from right to left.</p>
+							<p>The highlight color for related meaning matches</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="title" class="tsd-anchor"></a>
-					<h3>title</h3>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> title</h3>
 					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfProperties.ts#L37">src/models/submissions/properties/PdfProperties.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfReportColors.ts#L33">src/models/submissions/properties/PdfReportColors.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Customize the title for the PDF report.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="version" class="tsd-anchor"></a>
-					<h3>version</h3>
-					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <a href="../enums/models_submissions_properties_pdfreportversion.pdfreportversion.html" class="tsd-signature-type" data-tsd-kind="Enumeration">PdfReportVersion</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Copyleaks/NodeJS-Plagiarism-Checker/blob/21cca35/src/models/submissions/properties/PdfProperties.ts#L50">src/models/submissions/properties/PdfProperties.ts:50</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>PDF version to generate. By default version 1 will be generated as it our current stable version.
-							Version 2 is our latest iteration of our PDF report and is currently in beta.</p>
+							<p>The color for titles in copyleaks result report</p>
 						</div>
 					</div>
 				</section>
@@ -197,7 +179,7 @@
 						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/models_submissions_properties_pdfproperties.html">models/submissions/properties/<wbr>Pdf<wbr>Properties</a>
+						<a href="../modules/models_submissions_properties_pdfreportcolors.html">models/submissions/properties/<wbr>Pdf<wbr>Report<wbr>Colors</a>
 					</li>
 				</ul>
 			</nav>
@@ -206,25 +188,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="models_submissions_properties_pdfproperties.submissionpdf.html" class="tsd-kind-icon">SubmissionPDF</a>
+						<a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html" class="tsd-kind-icon">Pdf<wbr>Report<wbr>Colors</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="models_submissions_properties_pdfproperties.submissionpdf.html#colors" class="tsd-kind-icon">colors</a>
+								<a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html#identical" class="tsd-kind-icon">identical</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="models_submissions_properties_pdfproperties.submissionpdf.html#create" class="tsd-kind-icon">create</a>
+								<a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html#mainstrip" class="tsd-kind-icon">main<wbr>Strip</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="models_submissions_properties_pdfproperties.submissionpdf.html#largelogo" class="tsd-kind-icon">large<wbr>Logo</a>
+								<a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html#minorchanges" class="tsd-kind-icon">minor<wbr>Changes</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="models_submissions_properties_pdfproperties.submissionpdf.html#rtl" class="tsd-kind-icon">rtl</a>
+								<a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html#relatedmeaning" class="tsd-kind-icon">related<wbr>Meaning</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="models_submissions_properties_pdfproperties.submissionpdf.html#title" class="tsd-kind-icon">title</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="models_submissions_properties_pdfproperties.submissionpdf.html#version" class="tsd-kind-icon">version</a>
+								<a href="models_submissions_properties_pdfreportcolors.pdfreportcolors.html#title" class="tsd-kind-icon">title</a>
 							</li>
 						</ul>
 					</li>
